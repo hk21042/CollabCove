@@ -1,0 +1,348 @@
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #999999;
+}
+
+.line {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 3px solid #e9e9e9;
+}
+.orLine {
+  border-bottom:1px solid #999999;
+}
+.signIn {
+  border: 1px solid #d9d9d9;
+  background-color: inherit;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  width: 300px;
+  color: #999999;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+}
+.input_field {
+  border-bottom: 1px solid #bbbbbb;
+  display: inline-block;
+  border-radius: 8px;
+  width: 22vw;
+  background-color: #ffffff;
+  height: 2vh;
+}
+
+input {
+  border-bottom: 1px solid #ccc;
+  padding: 3vh 2vw;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #ccc;
+}
+
+.login {
+  border: 1px solid #71AAD6;
+  background-color: #75B2E1;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  width: 100px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: #7ab4e0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #7ab4e0;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+
+}
+.main1 {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 5px 10px;
+}
+.sidenav {
+    height: 100%;
+    width: 7vw;
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    background-color: #7ab4e0ff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow: visible;
+    flex-direction: column;
+}
+.sidenav center {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav1 {
+    height: 100%;
+    width: 11vw;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 7vw;
+    background-color: #D0E0E3;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.sidehover {
+  background-color:#5892c0ff
+}
+.heading {
+    top: 0;
+    margin-left: 9vw; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    width: calc(100% - 9vw);
+    height: 5vh;
+    margin-bottom: 3vh;
+}
+.heading > h1 {
+  color: "black";
+  font-size: 3vw;
+  padding: 5px;
+  margin-top: 5px;
+}
+.heading1 {
+    top: 0;
+    margin-left: 18vw; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    width: calc(100% - 9vw);
+    height: 5vh;
+    margin-bottom: 3vh;
+}
+.heading1 > h1 {
+  color: "black";
+  font-size: 3vw;
+  padding: 5px;
+  margin-top: 5px;
+}
+footer  {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.error  {
+  color: red;
+}
+#Menu {
+
+}
+.collapsed  {
+  display: none;
+}
+.profilepic {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.profilepic1 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.changeText {
+  border: 1px solid #bbbbbb;
+  padding: 1vh 1vw;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 8px;
+  width: 50%;
+  color: #000000;
+  height: 2%;
+}
+.update {
+  border: 1px solid #999999;
+  background-color: #999999;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  width: 100px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+  margin-bottom: 20px;
+}
+.taskBox {
+  border: 0px;
+  background-color: #999999;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  width: 50%;
+  color: black;
+  height: 15px;
+  text-align: center;
+}
+
+.taskHeader {
+  padding: 10px;
+}
+
+.taskBlock {
+  text-align: left;
+  background-color: #09B1E2;
+  color: white;
+  border: 0px;
+  -webkit-transition: height 4s ease;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+  transition: height 4s ease;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.taskRow {
+  height: 30px;
+}
+
+.taskBlock:hover {
+  height: 100px;
+  cursor: pointer;
+
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #9cd6f2dd;/*#9cd6f2aa*/
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+  top: 15%;
+  right: -80%;
+  margin-left: 120px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#taskButton{
+  width: auto;
+  height: 7%;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+}
+
+#taskButton:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#newTask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  transform: scale(1.1);
+  z-index: 999;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+#taskContent  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+    color: black;
+}
+#close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+#close-button:hover {
+    background-color: darkgray;
+}
+
+.taskInput {
+  height: 15px;
+  font-size: 13px;
+}
+
+.chooseFile {
+  font-size: 12px;
+  border-bottom: 0px;
+  padding-left:0;
+}
+
+#taskDone {
+  float: center;
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#taskDone:hover{
+  background-color: darkgray;
+  cursor: pointer;
+}
