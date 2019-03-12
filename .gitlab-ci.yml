@@ -1,8 +1,9 @@
-image: php:7.2
-
 before_script:
+# Install dependencies
 - bash ci/docker_install.sh > /dev/null
 
-test:app:
+# We test PHP7.0 (good luck with that)
+test:7.0:
+  image: php:7.0
   script:
   - phpunit --configuration phpunit_myapp.xml
