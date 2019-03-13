@@ -18,7 +18,7 @@ image: ruby:2.3
 before_script:
 #  - bundle install --path vendor
   - gem install jekyll bundler
-  - bundle install
+#  - bundle install
 
 pages:
   stage: deploy
