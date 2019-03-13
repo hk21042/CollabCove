@@ -16,7 +16,8 @@ image: ruby:2.3
 #  - vendor/
 
 before_script:
-  - bundle install --path vendor
+#  - bundle install --path vendor
+  - bundle install
 
 pages:
   stage: deploy
