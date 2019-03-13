@@ -37,6 +37,3 @@ test:
     - test
   except:
   - master
-
-exclude:
-  - vendor
