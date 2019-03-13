@@ -18,6 +18,7 @@ image: ruby:2.3
 before_script:
 #  - bundle install --path vendor
   - bundle install
+  - jekyll new . --force 
 
 pages:
   stage: deploy
