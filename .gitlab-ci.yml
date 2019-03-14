@@ -9,33 +9,61 @@
 #  script:
 #  - phpunit --configuration phpunit_myapp.xml
 
-image: ruby:2.6
+##image: ruby:2.6
 
 #cache:
 #  paths:
 #  - vendor/
 
-before_script:
+##before_script:
 #  - bundle install --path vendor
 #  - gem install jekyll bundler
-  - bundle install
+##  - bundle install
 
-pages:
-  stage: deploy
-  script:
-  - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+##pages:
+##  stage: deploy
+##  script:
+##  - bundle exec jekyll build -d public
+##  artifacts:
+##    paths:
+##    - public
+##  only:
+##  - master
+
+##test:
+##  stage: test
+##  script:
+##  - bundle exec jekyll build -d test
+##  artifacts:
+##    paths:
+##    - test
+##  except:
+##  - maste
+
+image: node:8.9.3
+
+stages:
+  - job1
+  - test
+  - production
+
+job1:
+  stage: job1
+  script: "ls -l"
 
 test:
   stage: test
+  script: 
+    - npm install
+
+production:
+  type: deploy
+  stage: production
+  image: ruby:latest
   script:
-  - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=quailapp --api-key=$HEROKU_PRODUCTION_API_KEY
+  only:
+    - master
