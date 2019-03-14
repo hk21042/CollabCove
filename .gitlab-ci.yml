@@ -9,7 +9,7 @@
 #  script:
 #  - phpunit --configuration phpunit_myapp.xml
 
-image: ruby:2.3
+image: ruby:2.6
 
 #cache:
 #  paths:
