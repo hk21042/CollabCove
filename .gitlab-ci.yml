@@ -17,7 +17,7 @@ image: ruby:2.6
 
 before_script:
 #  - bundle install --path vendor
-  - gem install jekyll bundler
+#  - gem install jekyll bundler
   - bundle install
 
 pages:
