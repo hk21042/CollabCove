@@ -124,7 +124,8 @@ a:hover {
 .heading {
     top: 0;
     margin-left: 9vw; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-top: 2vw;
+    font-size: 30px; /* Increased text to enable scrolling */
     width: calc(100% - 9vw);
     height: 5vh;
     margin-bottom: 3vh;
@@ -345,4 +346,30 @@ footer  {
 #taskDone:hover{
   background-color: darkgray;
   cursor: pointer;
+}
+
+.projectBox {
+    background-color: #F4F5F7;
+    border-radius: 0.4rem;
+    padding: inherit;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+    width: 200px;
+    height: 100px;
+}
+
+.projectBox h2{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: black;
+}
+
+.projectBox p{
+    padding-left: 10px;
+    color: #48516E;
+    font-style: italic;
+}
+
+.projectTable{
+    border-collapse:separate; 
+    border-spacing:20px 20px; 
 }
