@@ -49,7 +49,7 @@
             } else { 
               echo "ERROR: Could not able to execute $sql. ". mysqli_error($db); 
             }*/
-            header('location: home.php'); //redirect to home page
+            header('location: home.html'); //redirect to home page
         }    
   }
 
@@ -86,7 +86,7 @@ if ($result->num_rows > 0) {
             $_SESSION['name'] = $name;
             //$_SESSION['name'] = mysqli_query($db, $name);//need code to set user's name to session
             $_SESSION['success'] = "You are now logged in";
-            header('location: home.php'); //redirect to home page
+            header('location: home.html'); //redirect to home page
         }
         else    {
             array_push($errors, "Invalid email or password");
@@ -97,7 +97,7 @@ if ($result->num_rows > 0) {
     if  (isset($_GET['logout']))    {
         session_destroy();
         unset($_SESSION['email']);
-        header('location: index.php');
+        header('location: index.html');
     }
 
     //update
@@ -131,7 +131,7 @@ if ($result->num_rows > 0) {
         $sql = "UPDATE users SET name='$name', password='$password_1', email='$email' WHERE email='$oldEmail'";
         if(mysqli_query($db, $sql)){ 
           echo "Record was updated successfully."; 
-          header('location: profile.php');
+          header('location: profile.html');
         } else { 
           echo "ERROR: Could not able to execute $sql. ". mysqli_error($db); 
         }
