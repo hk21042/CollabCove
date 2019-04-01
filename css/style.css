@@ -259,7 +259,7 @@ footer  {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 80px;
-  background-color: #024FCFdd;/*#9cd6f2aa*/
+  background-color: rgb(63,131,245,0.6);/*#3F83F5;#9cd6f2aa*/
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -267,10 +267,10 @@ footer  {
   
   /* Position the tooltip */
   position: absolute;
-  z-index: 10;
-  top: 15%;
+  z-index: 100;
+  top: 10%;
   right: -80%;
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 .tooltip:hover .tooltiptext {

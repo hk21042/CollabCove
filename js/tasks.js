@@ -7,7 +7,7 @@ function createTask() {
   //document.getElementById("taskDone").preventDefault()
   var taskContents = `
         <tr>
-          <td width="10%">
+          <td>
             <h2>
               ${taskName}
             </h2>
