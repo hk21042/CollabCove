@@ -92,8 +92,9 @@
         <form>
           Create a new task <br>
           Task name: <input type="text" name="newTaskName" class = "taskInput" id="task_name" > <br>
-          People on task: <input type="text" name="newTaskPeople" class = "taskInput" id="task_person"> <br>
+          <!--People on task: <input type="text" name="newTaskPeople" class = "taskInput" id="task_person"> <br>-->
           Due date: <input type="date" name="newTaskDate" class = "taskInput" id="task_date"> <br>
+          Task description: <input type="descrip" name="newTaskDescrip" class = "taskInput" id="task_descrip"> <br>
           <?php include('errors.php') ?>
           <input type="submit" value="Done" id="taskDone" onclick="createTask(); loadTasks()">
         </form>
