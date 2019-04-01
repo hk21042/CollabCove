@@ -254,7 +254,6 @@ footer  {
 
 .tooltip {
   position: relative;
-  display: inline-block;
 }
 
 .tooltip .tooltiptext {
