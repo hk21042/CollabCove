@@ -128,7 +128,7 @@ a:hover {
     font-size: 30px; /* Increased text to enable scrolling */
     width: calc(100% - 9vw);
     height: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 .heading > h1 {
   color: "black";
@@ -382,8 +382,8 @@ footer  {
     border-radius: 0.4rem;
     padding: inherit;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
-    width: 80%;
     height: 100px;
+    text-align: left;
 }
 
 .taskBox h2{
@@ -399,6 +399,14 @@ footer  {
 }
 
 .taskTable{
+    margin-top: -20px;
     border-collapse:separate; 
     border-spacing:20px 20px; 
+    width: 2000px;
+}
+
+.taskTable tr{
+    width: 100%;
+    padding: 0;
+    line-height: 10px;
 }
