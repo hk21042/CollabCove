@@ -377,3 +377,29 @@ footer  {
     border-collapse:separate; 
     border-spacing:20px 20px; 
 }
+
+.taskBox {
+    background-color: #F4F5F7;
+    border-radius: 0.4rem;
+    padding: inherit;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
+    width: 80%;
+    height: 100px;
+}
+
+.taskBox h2{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: black;
+}
+
+.taskBox p{
+    padding-left: 10px;
+    color: #48516E;
+    font-style: italic;
+}
+
+.taskTable{
+    border-collapse:separate; 
+    border-spacing:20px 20px; 
+}
