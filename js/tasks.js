@@ -29,21 +29,32 @@ function loadTasks()  {
   document.getElementById('taskTable').innerHTML = localStorage.getItem(name);
 }
 
+
 function createProject() {
-  localStorage.setItem("projects", String(document.getElementById('projectTable').innerHTML));
+  localStorage.setItem('projects', String(document.getElementById('projectTable').innerHTML));
   var name = document.getElementById('project_name').value;
   var des = document.getElementById('project_descrip').value;
   //var taskPerson = document.getElementById('task_person').value;
   var date = document.getElementById('project_date').value;
   //document.getElementById("taskDone").preventDefault()
   var projectContents = `
-            <h2>
-              ${name}
-            </h2>
-            <p>
-              ${des}
-            </p>`;
-  localStorage.projects = localStorage.getItem("projects") + projectContents;
+        <li>
+            <div class="projectBox" onclick="projectRedirect(this)">
+                <h2>
+                  ${name}
+                </h2>
+                <p>
+                  ${des}
+                </p>
+            </div>
+        </li>`;
+  localStorage.setItem('projects', localStorage.getItem("projects") + projectContents);
+  loadProjects();
+}
+
+function loadProjects()  {
+  console.log(localStorage.projects);
+  document.getElementById('projectTable').innerHTML = localStorage.getItem('projects');
 }
 
 function displayDetails(task)  {
@@ -66,25 +77,7 @@ function displayDetails(task)  {
     }
 }
 
-function loadProjects()  {
-  document.getElementById('projectTable').innerHTML = localStorage.getItem("projects");
-}
-
 function projectRedirect(project)  {
     var name = project.children[0].textContent;
     window.open('/collabcove/tasks.php?name=' + name, '_self');
 }
-
-/*function loadTasks(){
-    function createTask(){
-        var taskName = document.getElementById('task_name').value;
-        var taskDes = document.getElementById('task_descrip').value;
-        //var taskPerson = document.getElementById('task_person').value;
-        var table = document.getElementById("taskTable");
-    
-        var newRow = insertRow(table.rows.length);
-        var cell = newRow.insertCell(0);
-        cell1.innerHTML = "<h2>${taskName}</h2><p>${taskDes}</p>";
-
-    }
-}*/

@@ -8,7 +8,7 @@
     <link type = "text/css" rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
-  <body onload="loadProjects()"><!--find free use image-->
+  <body onload="loadProjects()">
       <!--<?php if  (isset($_SESSION['success'])): ?>-->
         <div class = "content">
           <div class="sidenav">
@@ -56,7 +56,7 @@
       <div id="newProject">
       <div id="projectContent">
         <span id="close-button" onclick="closeWindow1()">&times;</span>
-        <form>
+        <form method="post">
           Create a new project <br>
           Project name: <input type="text" name="newProjectName" class = "taskInput" id="project_name" > <br>
           <!--People on task: <input type="text" name="newTaskPeople" class = "taskInput" id="task_person"> <br>-->
@@ -70,28 +70,8 @@
     </div>
     <br>
     <div class="main">
-        <table class="projectTable">
-            <tr>
-                <td>
-                    <div class="projectBox" onclick="projectRedirect(this)">
-                        <h2>Project Name</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="projectBox" onclick="projectRedirect(this)">
-                        <h2>Sample Project</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="projectBox" onclick="projectRedirect(this)">
-                        <h2>Sample Project 2</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <ul id="projectTable">
+        </ul>
         <img id="taskButton" src="media/new_plus_blue.png" onclick="newProject()" />
     </div>
     <!--<?php else: ?>

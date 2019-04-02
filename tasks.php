@@ -64,7 +64,6 @@
           <?php include('errors.php') ?>
           <input type="submit" value="Done" id="taskDone" onclick="createTask()"> <!-- ; loadTasks()-->
         </form>
-
       </div>
     </div>
     <div id="taskDetails">

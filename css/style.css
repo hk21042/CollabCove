@@ -43,6 +43,16 @@ input {
   outline: none;
 }
 
+ul, li  {
+    list-style: none;
+}
+
+#projectContent input {
+    height: 4vh;
+    padding: 0px;
+    margin: 1vh;
+}
+
 input:focus {
   border-bottom: 2px solid #ccc;
 }
@@ -356,8 +366,12 @@ footer  {
     border-radius: 0.4rem;
     padding: inherit;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
-    width: 90%;
     height: 100px;
+    width: 20vw;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    padding: 1vh;
+    padding-top: .5vh;
 }
 
 .projectBox h2{
@@ -372,25 +386,18 @@ footer  {
     font-style: italic;
 }
 
-.projectTable{
-    border-collapse:separate; 
-    border-spacing:5px 20px; 
+#projectTable{
     width: 100%;
     margin-left: -30px;
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .projectBox a: hover{
     color: transparent;
     background-color: transparent;
     text-decoration: none;
-}
-
-.projectTable{
-    margin-top: -10px;
-    border-collapse:separate; 
-    border-spacing:20px 20px; 
-    width: 100%;
-    margin-left: -40px;
 }
 
 #taskBox {
