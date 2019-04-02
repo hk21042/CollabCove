@@ -15,7 +15,7 @@
             <div class="tooltip">
               <a href="home.php">
                 <center>
-                  <img src="media/home.png" width="47" style="padding-bottom: 10px">
+                  <img src="media/home.png" width="47">
                 </center>
               </a>
               <span class="tooltiptext">Home</span>
@@ -28,43 +28,10 @@
               </a>
               <span class="tooltiptext">Profile</span>
             </div>
-            <!--<div class="tooltip">
-              <a href="settings.php">
-                <center>
-                  <img src="media/plus.png" width="40" style="margin-top: 5px">
-                </center>
-              </a>
-              <span class="tooltiptext">Settings</span>
-            </div>-->
-              
-            <!--<div class="tooltip">
-              <a href="tasks.php">
-                <center>
-                  <img src="media/tasks.png" width="50" height="50">
-                </center>
-              </a>
-              <span class="tooltiptext">Tasks</span>
-            </div>-->
-            <!--<div class="tooltip">
-              <a href="messages.php">
-                <center>
-                  <img src="media/messages.png" width="60" height="60">
-                </center>
-              </a>
-              <span class="tooltiptext">Messages</span>
-            </div>
-            <div class="tooltip">
-              <a href="calendar.php">
-                <center>
-                  <img src="media/calendar.png" width="40" height="40">
-                </center>
-              </a>
-              <span class="tooltiptext">Calendar</span>
-            </div>-->
             <div class="tooltip">
               <a href="settings.php">
                 <center>
-                  <img src="media/settings.png" width="50" style="margin-top: 10px">
+                  <img src="media/settings.png" width="50">
                 </center>
               </a>
               <span class="tooltiptext">Settings</span>

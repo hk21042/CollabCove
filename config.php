@@ -2,7 +2,7 @@
 
 $host = "localhost"; /* Host name */
 $user = "root"; /* User */
-$password = "collabcove"; /* Password */
+$password = ""; /* Password */
 $dbname = "registration"; /* Database name */
 
 $con = mysqli_connect($host, $user, $password,$dbname);

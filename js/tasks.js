@@ -3,18 +3,21 @@ function createTask() {
   var taskName = document.getElementById('task_name').value;
   var taskDes = document.getElementById('task_descrip').value;
   //var taskPerson = document.getElementById('task_person').value;
-  var dueDate = document.getElementById('task_date').value;
+  //var dueDate = document.getElementById('task_date').value;
   //document.getElementById("taskDone").preventDefault()
-  var taskContents = '
+  var taskContents = `
+        <tr>
+          <td id="taskBox">
             <h2>
               ${taskName}
             </h2>
             <p>
               ${taskDes}
-            </p>';
+            </p>
+          </td>
+        </tr>`
   localStorage.tasks = localStorage.getItem("tasks") + taskContents;
 }
-
 function loadTasks()  {
   document.getElementById('taskTable').innerHTML = localStorage.getItem("tasks");
 }
@@ -26,13 +29,13 @@ function createProject() {
   //var taskPerson = document.getElementById('task_person').value;
   var date = document.getElementById('project_date').value;
   //document.getElementById("taskDone").preventDefault()
-  var projectContents = '
+  var projectContents = `
             <h2>
               ${name}
             </h2>
             <p>
               ${des}
-            </p>';
+            </p>`;
   localStorage.projects = localStorage.getItem("projects") + projectContents;
 }
 

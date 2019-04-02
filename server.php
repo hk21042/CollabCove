@@ -34,9 +34,8 @@
 
         // if there are no errors, save user to database
         if  (count($errors) == 0)   {
-            $image = $_FILES['media/profile.png']['tmp_name'];
+            $image = $_FILES['media/cove.jpg']['tmp_name'];
             $imgContent = addslashes(file_get_contents($image));
-          
             $_SESSION['name'] = $name;
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password_1;

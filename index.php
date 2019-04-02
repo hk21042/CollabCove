@@ -59,16 +59,11 @@
           </div>
         </form>
       </div>
-
+        <div>
           <!-- validation error messages -->
           <?php include('errors.php') ?>
-        </div>
-      </form>
     </div>
   </center>
-  <footer>
-      <center><a href="about.php">about</a> | <a href="help.php">help</a> | © collabcove</center>
-  </footer>
   <!--<center><div style="border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; -icab-border-radius: 10px; -o-border-radius: 10px; border-top: 1px solid #cccccc; border-bottom: 5px solid #eeeeee; background: #F9F9F9; border: 2px solid #cccccc; margin-bottom: 5px; width: 20%"; align="center";>x<br>y</div></center>-->
   <script src="js/form.js"></script>
 </body>

@@ -91,15 +91,14 @@
               <table>
                 <tr>
                   <td>
-                    <!--<?php
+                    <?php
                     include("config.php");
                     $email = $_SESSION['email'];
                     $sql = "SELECT profile_picture FROM users WHERE email='$email'";
                     $sth = $db->query($sql);
                     $result=mysqli_fetch_array($sth);
                     echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['profile_picture'] ).'" width="11%" height="11%" class="profilepic" align = "center"/>';
-                    ?>-->
-                    <img src = "media/cove.jpg" width="11%" height="11%" class="profilepic" align = "center">
+                    ?>
                   </td>
                 </tr>
                 <tr>

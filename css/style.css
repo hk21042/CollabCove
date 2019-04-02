@@ -393,7 +393,7 @@ footer  {
     margin-left: -40px;
 }
 
-.taskBox {
+#taskBox {
     background-color: #F4F5F7;
     border-radius: 0.4rem;
     padding: inherit;
@@ -409,19 +409,19 @@ footer  {
     animation-delay: 2s;
 }
 
-.taskBox h2{
+#taskBox h2{
     padding-left: 10px;
     padding-top: 5px;
     color: black;
 }
 
-.taskBox p{
+#taskBox p{
     padding-left: 10px;
     color: #48516E;
     font-style: italic;
 }
 
-.taskTable{
+#taskTable{
     margin-top: -10px;
     border-collapse:separate; 
     border-spacing:20px 20px; 
@@ -429,7 +429,7 @@ footer  {
     margin-left: -40px;
 }
 
-.taskTable tr{
+#taskTable tr{
     width: 100%;
     padding: 0;
     line-height: 10px;
