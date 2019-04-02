@@ -20,11 +20,24 @@ function newTask() {
   }
 }
 
+function newProject() {
+  var x = document.getElementById("newProject");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 function closeWindow() {
   var x = document.getElementById("newTask");
   x.style.display = "none";
 }
 
+function closeWindow1() {
+  var x = document.getElementById("newProject");
+  x.style.display = "none";
+}
 /*$('#taskDone').click(function(e) {
   e.preventDefault()
   var table = document.getElementById("taskTable");

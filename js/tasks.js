@@ -19,6 +19,27 @@ function loadTasks()  {
   document.getElementById('taskTable').innerHTML = localStorage.getItem("tasks");
 }
 
+function createProject() {
+  localStorage.setItem("projects", String(document.getElementById('projectTable').innerHTML));
+  var name = document.getElementById('project_name').value;
+  var des = document.getElementById('project_descrip').value;
+  //var taskPerson = document.getElementById('task_person').value;
+  var date = document.getElementById('project_date').value;
+  //document.getElementById("taskDone").preventDefault()
+  var projectContents = '
+            <h2>
+              ${name}
+            </h2>
+            <p>
+              ${des}
+            </p>';
+  localStorage.projects = localStorage.getItem("projects") + projectContents;
+}
+
+function loadProjects()  {
+  document.getElementById('projectTable').innerHTML = localStorage.getItem("projects");
+}
+
 /*function loadTasks(){
     function createTask(){
         var taskName = document.getElementById('task_name').value;
