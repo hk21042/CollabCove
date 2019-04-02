@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto';
   font-size: 14px;
   color: #999999;
+    background-color: #11305E;
 }
 
 .line {
@@ -26,11 +27,11 @@ body {
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
 }
 .input_field {
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #4B4D50;
   display: inline-block;
   border-radius: 8px;
   width: 22vw;
-  background-color: #ffffff;
+  background-color: #BCC0C6;
   height: 2vh;
 }
 
@@ -101,7 +102,7 @@ a:hover {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-color: #024FCF;
+    background-color: #0C1F3B;
     overflow-x: hidden;
     padding-top: 20px;
     overflow: visible;
@@ -115,7 +116,7 @@ a:hover {
     display: block;
 }
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #494A4D;
 }
 .sidenav1 {
     height: 100%;
@@ -129,7 +130,7 @@ a:hover {
     padding-top: 10px;
 }
 .sidehover {
-  background-color:#5892c0ff
+  background-color:#5892c0ff;
 }
 .heading {
     top: 0;
@@ -207,8 +208,8 @@ footer  {
   height: 2%;
 }
 .update {
-  border: 1px solid #999999;
-  background-color: #999999;
+  border: 1px solid #5E616A;
+  background-color: #5E616A;
   padding: 12px 12px;
   font-size: 16px;
   cursor: pointer;
@@ -223,14 +224,14 @@ footer  {
 }
 .taskBox {
   border: 0px;
-  background-color: #999999;
+  background-color: #010F39;
   padding: 12px 12px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
   border-radius: 8px;
   width: 50%;
-  color: black;
+  color: white;
   height: 15px;
   text-align: center;
 }
@@ -269,7 +270,7 @@ footer  {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 80px;
-  background-color: rgb(63,131,245,0.6);/*#3F83F5;#9cd6f2aa*/
+  background-color: rgb(12,31,59,0.6);/*#3F83F5;#9cd6f2aa*/
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -318,11 +319,11 @@ footer  {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #252D37;
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
-    color: black;
+    color: white;
 }
 #close-button {
     float: right;
@@ -331,6 +332,8 @@ footer  {
     text-align: center;
     cursor: pointer;
     border-radius: 1rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 #close-button:hover {
     background-color: darkgray;
@@ -362,7 +365,7 @@ footer  {
 }
 
 .projectBox {
-    background-color: #F4F5F7;
+    background-color: #444B55;
     border-radius: 0.4rem;
     padding: inherit;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
@@ -377,12 +380,12 @@ footer  {
 .projectBox h2{
     padding-left: 10px;
     padding-top: 5px;
-    color: black;
+    color: white;
 }
 
 .projectBox p{
     padding-left: 10px;
-    color: #48516E;
+    color: #8B95A4;
     font-style: italic;
 }
 
@@ -401,7 +404,7 @@ footer  {
 }
 
 #taskBox {
-    background-color: #F4F5F7;
+    background-color: #444B55;
     border-radius: 0.4rem;
     padding: inherit;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
@@ -419,12 +422,12 @@ footer  {
 #taskBox h2{
     padding-left: 10px;
     padding-top: 5px;
-    color: black;
+    color: white;
 }
 
 #taskBox p{
     padding-left: 10px;
-    color: #48516E;
+    color: #8B95A4;
     font-style: italic;
 }
 
@@ -445,7 +448,7 @@ footer  {
 #normalTheme, #darkTheme{
     width: 30px;
     height: 20px;
-    background-color: #F4F5F7;
-    color: black;
+    background-color: #444B55;
+    color: white;
     
 }

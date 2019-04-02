@@ -6,7 +6,7 @@
 
   <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css", id="theme">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
 
@@ -120,12 +120,15 @@
         </table>
       </div>
     </div>
+      <button type="button" onclick="switchTheme()" id="normalTheme">Normal</button>
+      <button type="button" onclick="switchTheme()" id="darkTheme">Dark</button>
     <!--<?php else: ?>
     <div style="font-size:20px">
       You are not logged in!
     </div>
     <meta http-equiv="refresh" content="2; URL='/index.php">
     <?php endif ?>-->
+      
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 

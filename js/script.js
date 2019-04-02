@@ -62,3 +62,11 @@ function closeWindow2() {
   priority.innerHTML = "ghewahwa";
   //dueDate.innerHTML = document.getElementById("task_date").value; 
 })*/
+
+function switchTheme(){
+    if (document.getElementById('theme').href == "css/dark-style.css") {
+    document.getElementById('theme').href = "css/style.css";
+  } else {
+    document.getElementById('theme').href = "css/dark-style.css";
+  }
+}
