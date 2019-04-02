@@ -2,7 +2,7 @@
 
 <?php
 /*$email = $_GET['email'];
-$db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+$db = mysqli_connect('localhost', 'root', '', 'registration');
 $sql = "SELECT profile_picture FROM users WHERE email='$email'";
 $row = mysqli_fetch_assoc($sql);
 //mysql_close($link);
@@ -14,7 +14,7 @@ echo "testtesttesttesttesttesttest";
     $email      = $_GET['email'];
     $dbHost     = 'localhost';
     $dbUsername = 'root';
-    $dbPassword = 'collabcove';
+    $dbPassword = '';
     $dbName     = 'registration';
     
     //Create connection and select DB

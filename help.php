@@ -8,7 +8,7 @@
   <body>
     
     <br>
-    <a href="index.html">
+    <a href="index.php">
       <center>
       <img src="media/logo.png" height="45" alt="logo">
       </center>
@@ -30,7 +30,7 @@
       Answer
     </p>
     <footer>
-      <center><a href="about.html">about</a> | <a href="help.html">help</a> | © collabcove</center>
+      <center><a href="about.php">about</a> | <a href="help.php">help</a> | © collabcove</center>
     </footer>
   </body>
 </html>

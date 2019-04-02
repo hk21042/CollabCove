@@ -13,7 +13,7 @@
   <div class="content">
     <div class="sidenav">
             <div class="tooltip">
-              <a href="home.html">
+              <a href="home.php">
                 <center>
                   <img src="media/home.png" width="47" style="padding-bottom: 10px">
                 </center>
@@ -21,7 +21,7 @@
               <span class="tooltiptext">Home</span>
             </div>
             <div class="tooltip">
-              <a href="profile.html">
+              <a href="profile.php">
                 <center>
                   <img src="media/profile.png" width="45" height="45">
                 </center>
@@ -29,7 +29,7 @@
               <span class="tooltiptext">Profile</span>
             </div>
             <div class="tooltip">
-              <a href="tasks.html">
+              <a href="tasks.php">
                 <center>
                   <img src="media/tasks.png" width="50" height="50">
                 </center>
@@ -37,7 +37,7 @@
               <span class="tooltiptext">Tasks</span>
             </div>
             <div class="tooltip">
-              <a href="messages.html">
+              <a href="messages.php">
                 <center>
                   <img src="media/messages.png" width="60" height="60">
                 </center>
@@ -45,7 +45,7 @@
               <span class="tooltiptext">Messages</span>
             </div>
             <div class="tooltip">
-              <a href="calendar.html">
+              <a href="calendar.php">
                 <center>
                   <img src="media/calendar.png" width="40" height="40" style="margin-bottom:5px">
                 </center>
@@ -53,7 +53,7 @@
               <span class="tooltiptext">Calendar</span>
             </div>
             <div class="tooltip">
-              <a href="settings.html">
+              <a href="settings.php">
                 <center>
                   <img src="media/settings.png" width="50" style="margin-top: 5px">
                 </center>
@@ -62,7 +62,7 @@
             </div>
             <center style="margin-top: 43vh;"></center>
             <div class="tooltip">
-              <a href="index.html?logout='1'">
+              <a href="index.php?logout='1'">
                 <center>
                   <img src = "media/logout.png" width="40" style="bottom: 0">
                 </center>
@@ -141,7 +141,7 @@
     <div style="font-size:20px">
       You are not logged in!
     </div>
-    <meta http-equiv="refresh" content="2; URL='/index.html">
+    <meta http-equiv="refresh" content="2; URL='/index.php">
   <?php endif ?>-->
   <script type="text/javascript" src="js/script.js"></script>
 </body>

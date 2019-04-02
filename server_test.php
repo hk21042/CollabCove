@@ -7,7 +7,7 @@
     $tasksdb = "";
     $errors = array();
     // connects to the database
-    $db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+    $db = mysqli_connect('localhost', 'root', '', 'registration');
 
     // if registration button is clicked
     if  (isset($_POST['register'])) {
@@ -120,7 +120,7 @@ if ($result->num_rows > 0) {
 
     //update
     if  (isset($_POST['update']))    {
-        $db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+        $db = mysqli_connect('localhost', 'root', '', 'registration');
         $errors = array();
         $oldEmail = $_SESSION['email'];
       
@@ -174,7 +174,7 @@ if ($result->num_rows > 0) {
     }
 
 if (isset($_POST['pic']) && !empty($_FILES["file"]["tmp_name"])) {
-  /*$db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+  /*$db = mysqli_connect('localhost', 'root', '', 'registration');
   $query = "SELECT * FROM users WHERE email= '$email'";
   $check = getimagesize($_FILES["image"]["tmp_name"]);
   $image = $_FILES['image']['tmp_name'];
@@ -193,7 +193,7 @@ if (isset($_POST['pic']) && !empty($_FILES["file"]["tmp_name"])) {
         $imgContent = addslashes(file_get_contents($image));
         $dbHost     = 'localhost';
         $dbUsername = 'root';
-        $dbPassword = 'collabcove';
+        $dbPassword = '';
         $dbName     = 'registration';
         $email      = $_SESSION['email'];
         

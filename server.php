@@ -5,7 +5,7 @@
     $password = "";
     $errors = array();
     // connects to the database
-    $db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+    $db = mysqli_connect('localhost', 'root', '', 'registration');
 
     // if registration button is clicked
     if  (isset($_POST['register'])) {
@@ -49,7 +49,7 @@
             } else { 
               echo "ERROR: Could not able to execute $sql. ". mysqli_error($db); 
             }*/
-            header('location: home.html'); //redirect to home page
+            header('location: home.php'); //redirect to home page
         }    
   }
 
@@ -86,7 +86,7 @@ if ($result->num_rows > 0) {
             $_SESSION['name'] = $name;
             //$_SESSION['name'] = mysqli_query($db, $name);//need code to set user's name to session
             $_SESSION['success'] = "You are now logged in";
-            header('location: home.html'); //redirect to home page
+            header('location: home.php'); //redirect to home page
         }
         else    {
             array_push($errors, "Invalid email or password");
@@ -97,12 +97,12 @@ if ($result->num_rows > 0) {
     if  (isset($_GET['logout']))    {
         session_destroy();
         unset($_SESSION['email']);
-        header('location: index.html');
+        header('location: index.php');
     }
 
     //update
     if  (isset($_POST['update']))    {
-        $db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+        $db = mysqli_connect('localhost', 'root', '', 'registration');
         $errors = array();
         $oldEmail = $_SESSION['email'];
       
@@ -131,7 +131,7 @@ if ($result->num_rows > 0) {
         $sql = "UPDATE users SET name='$name', password='$password_1', email='$email' WHERE email='$oldEmail'";
         if(mysqli_query($db, $sql)){ 
           echo "Record was updated successfully."; 
-          header('location: profile.html');
+          header('location: profile.php');
         } else { 
           echo "ERROR: Could not able to execute $sql. ". mysqli_error($db); 
         }
@@ -156,7 +156,7 @@ if ($result->num_rows > 0) {
     }
 
 if (isset($_POST['pic']) && !empty($_FILES["file"]["tmp_name"])) {
-  /*$db = mysqli_connect('localhost', 'root', 'collabcove', 'registration');
+  /*$db = mysqli_connect('localhost', 'root', '', 'registration');
   $query = "SELECT * FROM users WHERE email= '$email'";
   $check = getimagesize($_FILES["image"]["tmp_name"]);
   $image = $_FILES['image']['tmp_name'];
@@ -175,7 +175,7 @@ if (isset($_POST['pic']) && !empty($_FILES["file"]["tmp_name"])) {
         $imgContent = addslashes(file_get_contents($image));
         $dbHost     = 'localhost';
         $dbUsername = 'root';
-        $dbPassword = 'collabcove';
+        $dbPassword = '';
         $dbName     = 'registration';
         $email      = $_SESSION['email'];
         
