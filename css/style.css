@@ -71,7 +71,7 @@ a:link {
 a:hover {
   color: #7ab4e0;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
@@ -377,6 +377,12 @@ footer  {
     border-spacing:5px 20px; 
     width: 100%;
     margin-left: -30px;
+}
+
+.projectBox a: hover{
+    color: transparent;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .taskBox {
