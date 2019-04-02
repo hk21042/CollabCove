@@ -7,7 +7,7 @@
     <link type = "text/css" rel="stylesheet" href="css/tasks.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
-  <body onload="loadTasks()"><!--find free use image-->
+  <body onload="loadTasks()"><!--find free use image--> 
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
       <div class = "content">
         <div class="sidenav">
@@ -94,9 +94,9 @@
           Task name: <input type="text" name="newTaskName" class = "taskInput" id="task_name" > <br>
           <!--People on task: <input type="text" name="newTaskPeople" class = "taskInput" id="task_person"> <br>-->
           Due date: <input type="date" name="newTaskDate" class = "taskInput" id="task_date"> <br>
-          Task description: <input type="descrip" name="newTaskDescrip" class = "taskInput" id="task_descrip"> <br>
+          Task description: <input type="text" name="newTaskDescrip" class = "taskInput" id="task_descrip"> <br>
           <?php include('errors.php') ?>
-          <input type="submit" value="Done" id="taskDone" onclick="createTask(); loadTasks()">
+          <input type="submit" value="Done" id="taskDone" onclick="createTask()"> <!-- ; loadTasks()-->
         </form>
 
       </div>
@@ -207,7 +207,7 @@
     </div>
     <meta http-equiv="refresh" content="2; URL='/index.html">
     <?php endif ?>-->
-    <script type="text/javascript" src="js/tasks.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tasks.js"></script>
   </body>
 </html>

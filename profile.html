@@ -31,14 +31,14 @@
           </a>
           <span class="tooltiptext">Profile</span>
         </div>
-        <div class="tooltip">
+        <!--<div class="tooltip">
           <a href="tasks.html">
             <center>
               <img src="media/tasks.png" width="50" height="50">
             </center>
           </a>
           <span class="tooltiptext">Tasks</span>
-        </div>
+        </div>-->
             <!--<div class="tooltip">
               <a href="messages.html">
                 <center>
@@ -91,15 +91,15 @@
               <table>
                 <tr>
                   <td>
-                    <?php
+                    <!--<?php
                     include("config.php");
                     $email = $_SESSION['email'];
                     $sql = "SELECT profile_picture FROM users WHERE email='$email'";
                     $sth = $db->query($sql);
                     $result=mysqli_fetch_array($sth);
                     echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['profile_picture'] ).'" width="11%" height="11%" class="profilepic" align = "center"/>';
-                    ?>
-                    <!--<img src = "media/cove.jpg" width="11%" height="11%" class="profilepic" align = "center">-->
+                    ?>-->
+                    <img src = "media/cove.jpg" width="11%" height="11%" class="profilepic" align = "center">
                   </td>
                 </tr>
                 <tr>
@@ -118,15 +118,15 @@
               <form action="profile.php" method="post">
                 Change name
                 <br>
-                <input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>" value="<?php echo $_SESSION['name'] ?>" required>
+                <input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>"  required>
                 <br>
                 <br> Change email
                 <br>
-                <input class="changeText" type="text" name="changeEmail" placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>" required>
+                <input class="changeText" type="text" name="changeEmail" placeholder="<?php echo $_SESSION['email'] ?>"  >
                 <br>
                 <br> Change password
                 <br>
-                <input class="changeText" type="password" name="changePassword" value="<?php echo $_SESSION['password'] ?>" required>
+                <input class="changeText" type="password" name="changePassword" >
                 <!--<?php echo $_SESSION['password'] ?>-->
                 <br><br><br>
                 <button type="submit" class="update" name="update">Update</button>

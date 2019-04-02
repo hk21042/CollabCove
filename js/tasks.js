@@ -2,23 +2,33 @@ function createTask() {
   localStorage.setItem("tasks", String(document.getElementById('taskTable').innerHTML));
   var taskName = document.getElementById('task_name').value;
   var taskDes = document.getElementById('task_descrip').value;
-  var taskPerson = document.getElementById('task_person').value;
-  //var dueDate = document.getElementById('task_date').value;
+  //var taskPerson = document.getElementById('task_person').value;
+  var dueDate = document.getElementById('task_date').value;
   //document.getElementById("taskDone").preventDefault()
-  var taskContents = `
-        <tr>
-          <td>
+  var taskContents = '
             <h2>
               ${taskName}
             </h2>
             <p>
               ${taskDes}
-            </p>
-          </td>
-        </tr>`
+            </p>';
   localStorage.tasks = localStorage.getItem("tasks") + taskContents;
 }
 
 function loadTasks()  {
   document.getElementById('taskTable').innerHTML = localStorage.getItem("tasks");
 }
+
+/*function loadTasks(){
+    function createTask(){
+        var taskName = document.getElementById('task_name').value;
+        var taskDes = document.getElementById('task_descrip').value;
+        //var taskPerson = document.getElementById('task_person').value;
+        var table = document.getElementById("taskTable");
+    
+        var newRow = insertRow(table.rows.length);
+        var cell = newRow.insertCell(0);
+        cell1.innerHTML = "<h2>${taskName}</h2><p>${taskDes}</p>";
+
+    }
+}*/
