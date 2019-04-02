@@ -15,65 +15,40 @@
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
     <div class="content">
       <div class="sidenav">
-        <div class="tooltip">
-          <a href="home.php">
-            <center>
-              <img src="media/home.png" width="47" style="padding-bottom: 10px">
-            </center>
-          </a>
-          <span class="tooltiptext">Home</span>
-        </div>
-        <div class="tooltip">
-          <a href="profile.php">
-            <center>
-              <img src="media/profile.png" width="45" height="45">
-            </center>
-          </a>
-          <span class="tooltiptext">Profile</span>
-        </div>
-        <!--<div class="tooltip">
-          <a href="tasks.php">
-            <center>
-              <img src="media/tasks.png" width="50" height="50">
-            </center>
-          </a>
-          <span class="tooltiptext">Tasks</span>
-        </div>-->
-            <!--<div class="tooltip">
-              <a href="messages.php">
+            <div class="tooltip">
+              <a href="home.php">
                 <center>
-                  <img src="media/messages.png" width="60" height="60">
+                  <img src="media/home.png" width="47">
                 </center>
               </a>
-              <span class="tooltiptext">Messages</span>
+              <span class="tooltiptext">Home</span>
             </div>
             <div class="tooltip">
-              <a href="calendar.php">
+              <a href="profile.php">
                 <center>
-                  <img src="media/calendar.png" width="40" height="40">
+                  <img src="media/profile.png" width="45" height="45">
                 </center>
               </a>
-              <span class="tooltiptext">Calendar</span>
-            </div>-->
-
-        <div class="tooltip">
-          <a href="settings.php">
-            <center>
-              <img src="media/settings.png" width="50" style="margin-top: 5px">
-            </center>
-          </a>
-          <span class="tooltiptext">Settings</span>
-        </div>
-        <center style="margin-top: 50vh;"></center>
-        <div class="tooltip">
-          <a href="index.php?logout='1'">
-            <center>
-              <img src="media/logout.png" width="40" style="bottom: 0">
-            </center>
-          </a>
-          <span class="tooltiptext">Logout</span>
-        </div>
-      </div>
+              <span class="tooltiptext">Profile</span>
+            </div>
+            <div class="tooltip">
+              <a href="settings.php">
+                <center>
+                  <img src="media/settings.png" width="50">
+                </center>
+              </a>
+              <span class="tooltiptext">Settings</span>
+            </div>
+            <center style="margin-top: 50vh;"></center>
+            <div class="tooltip">
+              <a href="index.php?logout='1'">
+                <center>
+                  <img src = "media/logout.png" width="40" style="bottom: 0">
+                </center>
+              </a>
+              <span class="tooltiptext">Logout</span>
+            </div>
+          </div>
       <div class="heading">
         <h1>
           profile

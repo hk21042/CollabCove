@@ -73,46 +73,20 @@
         <table class="projectTable">
             <tr>
                 <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
+                    <div class="projectBox" onclick="projectRedirect(this)">
                         <h2>Project Name</h2>
                         <p>Project Description</p>
                     </div>
                 </td>
                 <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
-                        <h2>Project Name</h2>
+                    <div class="projectBox" onclick="projectRedirect(this)">
+                        <h2>Sample Project</h2>
                         <p>Project Description</p>
                     </div>
                 </td>
                 <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
-                        <h2>Project Name</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
-                        <h2>Project Name</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
-                        <h2>Project Name</h2>
-                        <p>Project Description</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="projectBox">
-                        <a href="tasks.php">
-                        <h2>Project Name</h2>
+                    <div class="projectBox" onclick="projectRedirect(this)">
+                        <h2>Sample Project 2</h2>
                         <p>Project Description</p>
                     </div>
                 </td>

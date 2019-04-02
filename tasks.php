@@ -55,7 +55,7 @@
     <div id="newTask">
       <div id="taskContent">
         <span id="close-button" onclick="closeWindow()">&times;</span>
-        <form>
+        <form method="post">
           Create a new task <br>
           Task name: <input type="text" name="newTaskName" class = "taskInput" id="task_name" > <br>
           <!--People on task: <input type="text" name="newTaskPeople" class = "taskInput" id="task_person"> <br>-->
@@ -67,30 +67,14 @@
 
       </div>
     </div>
+    <div id="taskDetails">
+      <div id="detailContent">
+      </div>
+    </div>
     <br>
       
         <div class="main">
         <table id="taskTable">
-            <tr>
-                <td id="taskBox">
-                    <h2>Task Name</h2>
-                    <p>Task Description</p>
-                </td>
-            </tr>
-            <tr>
-                <td id="taskBox">
-                    <h2>Task Name</h2>
-                    <p>Task Description</p>
-                </td>
-            </tr>
-            <tr>
-                <td id="taskBox">
-                    <h2>Task Name</h2>
-                    <p>Task Description</p>
-                </td>
-            </tr>
-
-
         </table>
         <img id="taskButton" src="media/new_plus_blue.png" onclick="newTask()" />
     </div>

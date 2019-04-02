@@ -38,6 +38,11 @@ function closeWindow1() {
   var x = document.getElementById("newProject");
   x.style.display = "none";
 }
+
+function closeWindow2() {
+  var x = document.getElementById("taskDetails");
+  x.style.display = "none";
+}
 /*$('#taskDone').click(function(e) {
   e.preventDefault()
   var table = document.getElementById("taskTable");

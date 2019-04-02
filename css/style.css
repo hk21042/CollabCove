@@ -291,7 +291,7 @@ footer  {
   transform: scale(1.2);
 }
 
-#newTask, #newProject {
+#newTask, #taskDetails, #newProject {
   position: fixed;
   left: 0;
   top: 0;
@@ -303,7 +303,7 @@ footer  {
   z-index: 999;
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
-#taskContent, #projectContent  {
+#taskContent, #projectContent, #detailContent  {
     position: absolute;
     top: 50%;
     left: 50%;
