@@ -1,8 +1,8 @@
 body {
   font-family: 'Roboto';
   font-size: 14px;
-  color: #999999;
-    background-color: #11305E;
+  color: white;
+  background-color: #11305E;
 }
 
 .line {
@@ -207,7 +207,7 @@ footer  {
   color: #000000;
   height: 2%;
 }
-.update {
+.update, #normalTheme, #darkTheme {
   border: 1px solid #5E616A;
   background-color: #5E616A;
   padding: 12px 12px;
@@ -222,6 +222,16 @@ footer  {
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
   margin-bottom: 20px;
 }
+
+#normalTheme, #darkTheme {
+    width: 8vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #444B55;
+    color: white;
+}
+
 .taskBox {
   border: 0px;
   background-color: #010F39;
@@ -443,12 +453,4 @@ footer  {
     width: 100%;
     padding: 0;
     line-height: 10px;
-}
-
-#normalTheme, #darkTheme{
-    width: 30px;
-    height: 20px;
-    background-color: #444B55;
-    color: white;
-    
 }

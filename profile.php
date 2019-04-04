@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
 
-  <body>
+  <body onload="setTheme()">
     <!--find free use image-->
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
     <div class="content">
@@ -110,8 +110,10 @@
           </tr>
           <tr>
             <td>
+                <button type="button" onclick="switchThemeNormal()" id="normalTheme">Normal</button>
             </td>
             <td>
+                <button type="button" onclick="switchTheme()" id="darkTheme">Dark</button>
             </td>
             <td>
               <?php include('errors.php') ?>
@@ -120,8 +122,6 @@
         </table>
       </div>
     </div>
-      <button type="button" onclick="switchTheme()" id="normalTheme">Normal</button>
-      <button type="button" onclick="switchTheme()" id="darkTheme">Dark</button>
     <!--<?php else: ?>
     <div style="font-size:20px">
       You are not logged in!
