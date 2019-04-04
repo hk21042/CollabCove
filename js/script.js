@@ -1,6 +1,12 @@
 var dropped = false;
 var closeButton = document.querySelector(".close-button");
 
+function setTheme() {
+    if  (localStorage.getItem("theme") == null)
+        localStorage.setItem("theme", "css/style.css");
+    document.getElementById('theme').href = localStorage.getItem("theme");
+}
+
 function dropdown() {
     if (dropped == false) {
         document.getElementById("Menu").className = "";
@@ -62,3 +68,13 @@ function closeWindow2() {
   priority.innerHTML = "ghewahwa";
   //dueDate.innerHTML = document.getElementById("task_date").value; 
 })*/
+
+function switchTheme(){
+    document.getElementById('theme').href = "css/dark-style.css";
+    localStorage.setItem("theme", "css/dark-style.css");
+}
+
+function switchThemeNormal(){
+    document.getElementById('theme').href = "css/style.css";
+    localStorage.setItem("theme", "css/style.css");
+}
