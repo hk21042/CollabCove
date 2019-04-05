@@ -7,7 +7,7 @@
     <link type = "text/css" rel="stylesheet" href="css/tasks.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
-  <body onload="loadTasks(), setTheme()"><!--find free use image--> 
+  <body onload="loadTasks(), setTheme(), setButton()"><!--find free use image--> 
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
       <div class = "content">
           <div class="sidenav">

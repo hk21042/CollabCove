@@ -454,3 +454,8 @@ footer  {
     padding: 0;
     line-height: 10px;
 }
+
+button:focus {
+    outline:0 !important;
+    box-shadow: none;
+}

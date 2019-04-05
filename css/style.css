@@ -426,6 +426,10 @@ footer  {
     animation-delay: 2s;
 }
 
+#taskBox:hover  {
+    cursor: pointer;
+}
+
 #taskBox h2{
     padding-left: 10px;
     padding-top: 5px;
@@ -451,3 +455,8 @@ footer  {
     padding: 0;
     line-height: 10px;
 }
+
+button:focus {
+    outline:0;
+}
+

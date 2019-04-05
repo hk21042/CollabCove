@@ -7,6 +7,13 @@ function setTheme() {
     document.getElementById('theme').href = localStorage.getItem("theme");
 }
 
+function setButton()    {
+    if  (localStorage.getItem("theme") == "css/dark-style.css") {
+        document.getElementById("taskButton").src = "media/add-white.png";
+        console.log(document.getElementById("taskButton").src);
+    }
+}
+
 function dropdown() {
     if (dropped == false) {
         document.getElementById("Menu").className = "";
