@@ -88,3 +88,9 @@ function switchThemeNormal(){
     document.getElementById('theme').href = "css/style.css";
     localStorage.setItem("theme", "css/style.css");
 }
+
+function register() {
+  localStorage.setItem("name", document.getElementById('name').value);
+  localStorage.setItem("email", document.getElementById('email').value);
+  localStorage.setItem("password", document.getElementById('password_1').value);
+}
