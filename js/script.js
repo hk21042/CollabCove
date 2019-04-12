@@ -93,5 +93,5 @@ function register() {
   localStorage.setItem("name", document.getElementById('name').value);
   localStorage.setItem("email", document.getElementById('email').value);
   localStorage.setItem("password", document.getElementById('password_1').value);
-  document.location.href = home.html;
+  document.location.href = https://hannah.kim.gitlab.io/collabcove/home.html;
 }
