@@ -14,8 +14,8 @@
       localStorage.setItem("name", document.getElementById('name').value);
       localStorage.setItem("email", document.getElementById('email').value);
       localStorage.setItem("password", document.getElementById('password_1').value);
-      window.location = "https://hannah.kim.gitlab.io/collabcove/home.html";
       console.log("x");
+      window.location = "https://hannah.kim.gitlab.io/collabcove/home.html";
       }
       </script>
   </head>
@@ -38,10 +38,10 @@
   <center>
     <form action="register.html" method="post">
       <div width=22vw>
-        <input class="input_field" type="text" name="email" placeholder="Email" value="" required><br><br>
-        <input class="input_field" type="text" name="name" placeholder="Full Name" value="" required><br><br>
-        <input class="input_field" type="password" name="password_1" placeholder="Password" required><br><br>
-        <input class="input_field" type="password" name="password_2" placeholder="Confirm Password" required><br><br>
+        <input class="input_field" type="text" id="email" name="email" placeholder="Email" value="" required><br><br>
+        <input class="input_field" type="text" id="name" name="name" placeholder="Full Name" value="" required><br><br>
+        <input class="input_field" type="password" id="password_1" name="password_1" placeholder="Password" required><br><br>
+        <input class="input_field" type="password" id="password_2" name="password_2" placeholder="Confirm Password" required><br><br>
         <!-- validation error messages -->
         <?php include('errors.php') ?>
       </div>
