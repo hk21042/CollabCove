@@ -11,7 +11,7 @@
     <script type="text/javascript" src="js/tasks.js"></script>
     <script>
     function register() {
-      if (document.getElementById('name').value!=""&&document.getElementById('email').value!=""&&document.getElementById('password_1').value!="") {
+      if (document.getElementById('name').value!=""&&document.getElementById('email').value!=""&&document.getElementById('password_1').value!=""&&document.getElementById('password_2').value!=""&&document.getElementById('password_1').value==document.getElementById('password_2').value) {
         localStorage.setItem("name", document.getElementById('name').value);
         localStorage.setItem("email", document.getElementById('email').value);
         localStorage.setItem("password", document.getElementById('password_1').value);
