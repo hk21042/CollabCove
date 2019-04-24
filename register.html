@@ -11,11 +11,12 @@
     <script type="text/javascript" src="js/tasks.js"></script>
     <script>
     function register() {
-      localStorage.setItem("name", document.getElementById('name').value);
-      localStorage.setItem("email", document.getElementById('email').value);
-      localStorage.setItem("password", document.getElementById('password_1').value);
-      console.log("x");
-      window.location = "https://hannah.kim.gitlab.io/collabcove/home.html";
+      if (document.getElementById('name').value!=null&&document.getElementById('email').value!=null&&document.getElementById('password_1').value!=null) {
+        localStorage.setItem("name", document.getElementById('name').value);
+        localStorage.setItem("email", document.getElementById('email').value);
+        localStorage.setItem("password", document.getElementById('password_1').value);
+        window.location = "https://hannah.kim.gitlab.io/collabcove/home.html";
+        }
       }
       </script>
   </head>
