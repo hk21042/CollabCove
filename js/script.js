@@ -2,8 +2,9 @@ var dropped = false;
 var closeButton = document.querySelector(".close-button");
 
 function setTheme() {
-    if  (localStorage.getItem("theme") == null)
+    if  (localStorage.getItem("theme") == null) {
         localStorage.setItem("theme", "css/style.css");
+    }
     document.getElementById('theme').href = localStorage.getItem("theme");
 }
 
