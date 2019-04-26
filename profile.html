@@ -6,20 +6,17 @@
 
   <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="css/style.css", id="theme">
+    <link type="text/css" rel="stylesheet" id="theme">
+
+    <script>
+    if  (localStorage.getItem("theme") == null) {
+        localStorage.setItem("theme", "css/style.css");
+    }
+    document.getElementById('theme').href = localStorage.getItem("theme");
+    </script>
+    
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <script type="text/javascript" src="js/script.js"></script>
-    <script>
-    function switchTheme(){
-    document.getElementById('theme').href = "css/dark-style.css";
-    localStorage.setItem("theme", "css/dark-style.css");
-    }
-    
-    function switchThemeNormal(){
-    document.getElementById('theme').href = "css/style.css";
-    localStorage.setItem("theme", "css/style.css");
-    }
-    </script>
   </head>
 
   <body onload="setTheme()">
