@@ -8,7 +8,6 @@ function setTheme() {
     document.getElementById('theme').href = localStorage.getItem("theme");
 }
 
-/*<<<<<<< HEAD
 function setButton()    {
     if  (localStorage.getItem("theme") == "css/dark-style.css") {
         document.getElementById("taskButton").src = "media/add-white.png";
@@ -16,8 +15,6 @@ function setButton()    {
     }
 }
 
-=======
->>>>>>> 8c66a299d7aebb38891a7e249f103495548ddae5*/
 function dropdown() {
     if (dropped == false) {
         document.getElementById("Menu").className = "";
