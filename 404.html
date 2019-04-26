@@ -5,10 +5,19 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link type = "text/css" rel="stylesheet" href="css/style.css">
+    <link type = "text/css" rel="stylesheet" id="theme">
+
+    <script>
+    if  (localStorage.getItem("theme") == null) {
+        localStorage.setItem("theme", "css/style.css");
+    }
+    document.getElementById('theme').href = localStorage.getItem("theme");
+    </script>
+
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body><!--find free use image-->
+  <body onload="setTheme()"><!--find free use image-->
       <!--<?php if  (isset($_SESSION['success'])): ?>-->
         <div class = "content">
           <div class="sidenav">
