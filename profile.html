@@ -102,11 +102,6 @@
               <form action="profile.html" method="post">
                 Change name
                 <br>
-                <script>
-                  document.getElementById("changeName").placeholder=localStorage.getItem("name");
-                  document.getElementById("changeEmail").placeholder=localStorage.getItem("email");
-                  document.getElementById("changePassword").placeholder=localStorage.getItem("password");
-                </script>
                 <input class="changeText" type="text" name="changeName" placeholder=""  id="changeName" required>
                 <!--<input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>"  required>-->
                 <br>
@@ -120,6 +115,11 @@
                 <input class="changeText" type="password" name="changePassword" placeholder="" id="changePassword" required>
                 <!--<input class="changeText" type="password" name="changePassword" >-->
                 <!--<?php echo $_SESSION['password'] ?>-->
+                <script>
+                  document.getElementById("changeName").placeholder=localStorage.getItem("name");
+                  document.getElementById("changeEmail").placeholder=localStorage.getItem("email");
+                  document.getElementById("changePassword").placeholder=localStorage.getItem("password");
+                </script>
                 <br><br><br>
                 <button type="submit" class="update" name="update">Update</button>
                 <!--<?php /*echo $_SESSION['name']*/ ?>-->
