@@ -102,15 +102,23 @@
               <form action="profile.html" method="post">
                 Change name
                 <br>
-                <input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>"  required>
+                <script>
+                  changeName.placeholder=localStorage.getItem('name');
+                  changeEmail.placeholder=localStorage.getItem('email');
+                  changePassword.placeholder=localStorage.getItem('password');
+                </script>
+                <input class="changeText" type="text" name="changeName" placeholder=""  id="changeName" required>
+                <!--<input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>"  required>-->
                 <br>
                 <br> Change email
                 <br>
-                <input class="changeText" type="text" name="changeEmail" placeholder="<?php echo $_SESSION['email'] ?>"  >
+                <input class="changeText" type="text" name="changeEmail" placeholder="" id="changeEmail" required>
+                <!--<input class="changeText" type="text" name="changeEmail" placeholder="<?php echo $_SESSION['email'] ?>"  >-->
                 <br>
                 <br> Change password
                 <br>
-                <input class="changeText" type="password" name="changePassword" >
+                <input class="changeText" type="password" name="changePassword" placeholder="" id="changePassword" required>
+                <!--<input class="changeText" type="password" name="changePassword" >-->
                 <!--<?php echo $_SESSION['password'] ?>-->
                 <br><br><br>
                 <button type="submit" class="update" name="update">Update</button>
@@ -124,6 +132,7 @@
               Change theme
             </td>
           </tr>
+          <br>
           <tr>
             <td style="text-align:center">
                 <button onclick="switchThemeNormal()" class="update" style="border:1px solid #999999; background-color:#999999;">Normal</button>
