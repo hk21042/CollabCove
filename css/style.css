@@ -243,6 +243,12 @@ footer  {
   color: black;
   height: 15px;
   text-align: center;
+  transition: left ease 0.5s;
+  left: 10;
+}
+
+.taskBox:hover{
+    left: 40px;
 }
 
 .taskHeader {
