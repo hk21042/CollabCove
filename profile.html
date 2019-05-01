@@ -102,23 +102,23 @@
               <form action="profile.html" method="post">
                 Change name
                 <br>
-                <input class="changeText" type="text" name="changeName" placeholder=""  id="changeName" required>
+                <input class="changeText" type="text" name="changeName" value=""  id="changeName" required>
                 <!--<input class="changeText" type="text" name="changeName" placeholder="<?php echo $_SESSION['name'] ?>"  required>-->
                 <br>
                 <br> Change email
                 <br>
-                <input class="changeText" type="text" name="changeEmail" placeholder="" id="changeEmail" required>
+                <input class="changeText" type="text" name="changeEmail" value="" id="changeEmail" required>
                 <!--<input class="changeText" type="text" name="changeEmail" placeholder="<?php echo $_SESSION['email'] ?>"  >-->
                 <br>
                 <br> Change password
                 <br>
-                <input class="changeText" type="password" name="changePassword" placeholder="" id="changePassword" required>
+                <input class="changeText" type="password" name="changePassword" value="" id="changePassword" required>
                 <!--<input class="changeText" type="password" name="changePassword" >-->
                 <!--<?php echo $_SESSION['password'] ?>-->
                 <script>
-                  document.getElementById("changeName").placeholder=localStorage.getItem("name");
-                  document.getElementById("changeEmail").placeholder=localStorage.getItem("email");
-                  document.getElementById("changePassword").placeholder=localStorage.getItem("password");
+                  document.getElementById("changeName").value=localStorage.getItem("name");
+                  document.getElementById("changeEmail").value=localStorage.getItem("email");
+                  document.getElementById("changePassword").value=localStorage.getItem("password");
                 </script>
                 <br><br><br>
                 <button type="submit" class="update" name="update">Update</button>
