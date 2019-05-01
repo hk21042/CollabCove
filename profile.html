@@ -14,6 +14,14 @@
     }
     document.getElementById('theme').href = localStorage.getItem("theme");
     </script>
+
+    <script>
+      function update() {
+        localStorage.getItem("name")=document.getElementById("changeName").value;
+        localStorage.getItem("email")=document.getElementById("changeEmail").value;
+        localStorage.getItem("password")=document.getElementById("changePassword").value;
+      }
+    </script>
     
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <script type="text/javascript" src="js/script.js"></script>
@@ -121,7 +129,8 @@
                   document.getElementById("changePassword").value=localStorage.getItem("password");
                 </script>
                 <br><br><br>
-                <button type="submit" class="update" name="update">Update</button>
+                <button onclick="update()" class="update">Update</button>
+                <!--<button type="submit" class="update" name="update">Update</button>-->
                 <!--<?php /*echo $_SESSION['name']*/ ?>-->
               </form>
               <center style="margin-top: 10vh;"></center>
