@@ -125,6 +125,11 @@
                 <input class="changeText" type="password" name="changePassword" value="" id="changePassword" required>
                 <!--<input class="changeText" type="password" name="changePassword" >-->
                 <!--<?php echo $_SESSION['password'] ?>-->
+                <script>
+                  document.getElementById("changeName").value=localStorage.getItem("name");
+                  document.getElementById("changeEmail").value=localStorage.getItem("email");
+                  document.getElementById("changePassword").value=localStorage.getItem("password");
+                </script>
                 <br><br><br>
                 <button onclick="update()" class="update">Update</button>
                 <!--<button type="submit" class="update" name="update">Update</button>-->
