@@ -17,9 +17,9 @@
 
     <script>
       function update() {
-        localStorage.getItem("name")=document.getElementById("changeName").value;
-        localStorage.getItem("email")=document.getElementById("changeEmail").value;
-        localStorage.getItem("password")=document.getElementById("changePassword").value;
+        localStorage.setItem("name", document.getElementById("changeName").value);
+        localStorage.getItem("email", document.getElementById("changeEmail").value);
+        localStorage.getItem("password", document.getElementById("changePassword").value);
       }
     </script>
     
