@@ -17,9 +17,11 @@
 
     <script>
       function update() {
-        localStorage.setItem("name", document.getElementById("changeName").value);
-        localStorage.getItem("email", document.getElementById("changeEmail").value);
-        localStorage.getItem("password", document.getElementById("changePassword").value);
+        if (document.getElementById('changeName').value!=""&&document.getElementById('changeEmail').value!=""&&document.getElementById('changePassword').value!="") {
+          localStorage.setItem("name", document.getElementById("changeName").value);
+          localStorage.setItem("email", document.getElementById("changeEmail").value);
+          localStorage.setItem("password", document.getElementById("changePassword").value);
+        }
       }
     </script>
     
@@ -107,7 +109,7 @@
             <td style="width:20%">
             </td>
             <td style="width:50%">
-              <form action="profile.html" method="post">
+              <!--<form action="profile.html" method="post">-->
                 Change name
                 <br>
                 <input class="changeText" type="text" name="changeName" value=""  id="changeName" required>
@@ -123,16 +125,11 @@
                 <input class="changeText" type="password" name="changePassword" value="" id="changePassword" required>
                 <!--<input class="changeText" type="password" name="changePassword" >-->
                 <!--<?php echo $_SESSION['password'] ?>-->
-                <script>
-                  document.getElementById("changeName").value=localStorage.getItem("name");
-                  document.getElementById("changeEmail").value=localStorage.getItem("email");
-                  document.getElementById("changePassword").value=localStorage.getItem("password");
-                </script>
                 <br><br><br>
                 <button onclick="update()" class="update">Update</button>
                 <!--<button type="submit" class="update" name="update">Update</button>-->
                 <!--<?php /*echo $_SESSION['name']*/ ?>-->
-              </form>
+              <!--</form>-->
               <center style="margin-top: 10vh;"></center>
             </td>
           </tr>
