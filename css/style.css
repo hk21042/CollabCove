@@ -139,6 +139,7 @@ a:hover {
     width: calc(100% - 9vw);
     height: 5vh;
     margin-bottom: 1vh;
+    line-height: 50%;
 }
 .heading > h1 {
   color: "black";
