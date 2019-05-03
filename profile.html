@@ -46,6 +46,14 @@
               <a href="profile.html">
                 <center>
                   <img src="media/profile.png" width="45" height="45">
+                  <!--<?php
+                    include("config.php");
+                    $email = $_SESSION['email'];
+                    $sql = "SELECT profile_picture FROM users WHERE email='$email'";
+                    $sth = $db->query($sql);
+                    $result=mysqli_fetch_array($sth);
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['profile_picture'] ).'" width="45" height="45" class="profilepic" align = "center"/>';
+                    ?>-->
                 </center>
               </a>
               <span class="tooltiptext">Profile</span>
