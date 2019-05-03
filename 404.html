@@ -14,6 +14,12 @@
     document.getElementById('theme').href = localStorage.getItem("theme");
     </script>
 
+    <script>
+      function setCove() {
+        document.getElementById('cove').innerHTML=localStorage.getItem("name").toLowerCase()+"'s "+"cove"
+      }
+    </script>
+    
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
@@ -64,8 +70,11 @@
             </div>
           </div>
           <div class="heading">
-            <h1>
+            <h1 id="cove">
               your cove
+              <script>
+                setCove();
+              </script>
             </h1>
           </div>
           <br>
