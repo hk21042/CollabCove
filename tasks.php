@@ -46,16 +46,16 @@
             </div>
           </div>
           <div class="heading">
-            <h1>
+            <h3>
               Project Name
-            </h1>
-            <h2 style="color: #48516e">
+            </h3>
+            <h4 style="color: #48516e">
                 Due Date: 5/10/2019
-            </h2>
-            <h3 style="color: #48516e; font-style: italic;">
+            </h4>
+            <h5 style="color: #48516e; font-style: italic;">
                 Lorem ipsum dlsfjkjdfsdjnfkjdsnfjds nfjsdnfkjsndafkjdsnfkjdnsfk fweagwaggweagwa kdsjnfjkdsnf 
                 jkdsnfkjdsnfjkndsf dshfkjsdna kjdsfjkdnsfkjdsnf gaewgwagwagwagewagewakdjsbfjkdsnfjkndsfjk jhdbshjsvhj jdsnvjkdnsdskjnvdskljfnv kjbdsvhbdfv
-            </h3>
+            </h5>
             
           </div>
           <br>

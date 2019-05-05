@@ -137,14 +137,13 @@ a:hover {
     margin-top: 2vw;
     font-size: 30px; /* Increased text to enable scrolling */
     width: calc(100% - 9vw);
-    height: 5vh;
-    margin-bottom: 1vh;
+    height: 3vh;
+    /*margin-bottom: 1vh;*/
+    /*line-height: 60%;*/
 }
-.heading > h1 {
-  color: "black";
-  font-size: 3vw;
-  padding: 5px;
-  margin-top: 5px;
+.heading > h3, h4, h5 {
+  padding: 0px;
+  margin: 0px;
 }
 .heading1 {
     top: 0;
