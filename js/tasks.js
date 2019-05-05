@@ -11,7 +11,7 @@ function createTask() {
         <tr>
           <td id="taskBox" onclick="displayDetails(this)">
             <h2>
-              ${taskName} | ${dueDate}
+              <span>${taskName}</span> <span style="float:right; padding-right: 10px">${dueDate}</span>
             </h2>
             <p>
               ${taskDes}

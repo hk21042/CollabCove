@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <link type = "text/css" rel="stylesheet" href="css/style.css">
     <link type = "text/css" rel="stylesheet" href="css/form.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -12,7 +12,7 @@
   <body>
 
     <br>
-    <a href="index.html">
+    <a href="index.php">
       <center>
         <img src="media/logo.png" height="45" alt="logo">
       </center>
@@ -29,7 +29,7 @@
           <h1>Log In</h1>
           <h3>Welcome Back</h3>
         </div>
-        <form id="formfull" action="index.html" method="post">
+        <form id="formfull" action="index.php" method="post">
         <div class="row">
           <div class="rowfakediv"><img src="https://png.icons8.com/material/30/424242/mail.png" alt="usernameicon"></div>
           <div class="flex2">
@@ -52,8 +52,8 @@
             </span>
           </div>
         </div>
-        <a href="forgot.html" class="forgot">Forgot Password?</a>
-        <h3 class="dontalready">Don't have an account? <a href="register.html" class="dontalreadylink">Sign Up</a></h3>
+        <a href="forgot.php" class="forgot">Forgot Password?</a>
+        <h3 class="dontalready">Don't have an account? <a href="register.php" class="dontalreadylink">Sign Up</a></h3>
           <div class="btns">
             <button type="submit" class="login" name="login">Log In</button>
           </div>

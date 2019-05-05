@@ -2,20 +2,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <link type = "text/css" rel="stylesheet" href="css/style.css" id="theme">
     <link type = "text/css" rel="stylesheet" href="css/tasks.css">
-
-    <script>
-    if  (localStorage.getItem("theme") == null) {
-        localStorage.setItem("theme", "css/style.css");
-    }
-    document.getElementById('theme').href = localStorage.getItem("theme");
-    </script>
-
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   </head>
-  <body onload="loadProjects(), setTheme(), setButton(), loadTasks()">
+  <body onload="loadTasks(), setTheme()"><!--find free use image--> 
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
       <div class = "content">
           <div class="sidenav">
@@ -91,8 +83,6 @@
         <div class="main">
         <table id="taskTable">
         </table>
-        <ul id="projectTable">
-        </ul>
         <img id="taskButton" src="media/new_plus_blue.png" onclick="newTask()" />
     </div>
     <!-- OLD  

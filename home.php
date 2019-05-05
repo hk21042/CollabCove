@@ -4,33 +4,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='icon' href='media/favicon.png' type='image/x-icon'/ >
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link type = "text/css" rel="stylesheet" id="theme">
-
-    <script>
-    if  (localStorage.getItem("theme") == null) {
-        localStorage.setItem("theme", "css/style.css");
-    }
-    document.getElementById('theme').href = localStorage.getItem("theme");
-    </script>
-
-    <script>
-      function setCove() {
-        document.getElementById('cove').innerHTML=localStorage.getItem("name").toLowerCase()+"'s "+"cove"
-      }
-    </script>
-
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link type = "text/css" rel="stylesheet" href="css/style.css" id="theme">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/tasks.js"></script>
   </head>
   <body onload="loadProjects(), setTheme(), setButton()">
       <!--<?php if  (isset($_SESSION['success'])): ?>-->
         <div class = "content">
           <div class="sidenav">
             <div class="tooltip">
-              <a href="home.html">
+              <a href="home.php">
                 <center>
                   <img src="media/home.png" width="47">
                 </center>
@@ -38,23 +21,15 @@
               <span class="tooltiptext">Home</span>
             </div>
             <div class="tooltip">
-              <a href="profile.html">
+              <a href="profile.php">
                 <center>
                   <img src="media/profile.png" width="45" height="45">
-                  <!--<?php
-                    include("config.php");
-                    $email = $_SESSION['email'];
-                    $sql = "SELECT profile_picture FROM users WHERE email='$email'";
-                    $sth = $db->query($sql);
-                    $result=mysqli_fetch_array($sth);
-                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['profile_picture'] ).'" width="45" height="45" class="profilepic" align = "center"/>';
-                    ?>-->
                 </center>
               </a>
               <span class="tooltiptext">Profile</span>
             </div>
             <div class="tooltip">
-              <a href="settings.html">
+              <a href="settings.php">
                 <center>
                   <img src="media/settings.png" width="50">
                 </center>
@@ -63,7 +38,7 @@
             </div>
             <center style="margin-top: 50vh;"></center>
             <div class="tooltip">
-              <a href="index.html?logout='1'">
+              <a href="index.php?logout='1'">
                 <center>
                   <img src = "media/logout.png" width="40" style="bottom: 0">
                 </center>
@@ -72,11 +47,8 @@
             </div>
           </div>
           <div class="heading">
-            <h1 id="cove">
+            <h1>
               your cove
-              <script>
-                setCove();
-              </script>
             </h1>
           </div>
           <br>
@@ -100,7 +72,7 @@
     <div class="main">
         <ul id="projectTable">
         </ul>
-        <img id="taskButton" src="media/new_plus_blue.png" onclick="createProject()" />
+        <img id="taskButton" src="media/new_plus_blue.png" onclick="newProject()" />
     </div>
     <!--<?php else: ?>
     <div style="font-size:20px">
@@ -108,5 +80,7 @@
     </div>
     <meta http-equiv="refresh" content="2; URL='/index.php">
     <?php endif ?>-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tasks.js"></script>
   </body>
 </html>
