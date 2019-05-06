@@ -66,8 +66,8 @@ function displayDetails(task)  {
         <h2>Task: ${taskName}</h2>
         <h3>Due: ${dueDate}</h3>
         <p>${taskDescription}</p>
-        <span id="delete-button" onclick="closeWindow2()">Delete</span>
-        <span id="complete-button" onclick="closeWindow2()">Completed</span>
+        <span id="delete-button" onclick="deleteTask(task)">Delete</span>
+        <span id="complete-button" onclick="completeTask(task)">Completed</span>
     `
     console.log(taskCont);
     document.getElementById("detailContent").innerHTML = taskCont;
