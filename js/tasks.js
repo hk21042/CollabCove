@@ -58,8 +58,8 @@ function loadProjects()  {
 }
 
 function displayDetails(task)  {
-    var taskName = task.children[0].innerHTML.split(" | ")[0];
-    var dueDate = task.children[0].innerHTML.split(" | ")[1];
+    var taskName = task.children[0].innerHTML.split(/<\/?span>/)[1];
+    var dueDate = task.children[0].innerHTML.split(/<\/?span>/)[2];
     var taskDescription = task.children[1].innerText;
     var taskCont = `
         <span id="close-button" onclick="closeWindow2()">&times;</span>

@@ -138,9 +138,10 @@ a:hover {
     font-size: 30px; /* Increased text to enable scrolling */
     width: calc(100% - 9vw);
     height: 3vh;
-    /*margin-bottom: 1vh;*/
+    margin-bottom: 1vh;
     /*line-height: 60%;*/
 }
+
 .heading > h3, h4, h5 {
   padding: 0px;
   margin: 0px;
@@ -448,7 +449,7 @@ footer  {
 }
 
 #taskTable{
-    margin-top: -10px;
+    margin-top: 200px;
     border-collapse:separate; 
     border-spacing:20px 20px; 
     width: 100%;

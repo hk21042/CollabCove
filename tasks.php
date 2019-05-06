@@ -58,7 +58,6 @@
             </h5>
             
           </div>
-          <br>
     </div>
     <div id="newTask">
       <div id="taskContent">
