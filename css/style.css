@@ -131,7 +131,18 @@ a:hover {
 .sidehover {
   background-color:#5892c0ff
 }
+
 .heading {
+    top: 0;
+    margin-left: 9vw; /* Same as the width of the sidenav */
+    margin-top: 1vw;
+    font-size: 30px; /* Increased text to enable scrolling */
+    width: calc(100% - 9vw);
+    height: 3vh;
+    margin-bottom: 1vh;
+}
+
+.task-heading {
     top: 0;
     margin-left: 9vw; /* Same as the width of the sidenav */
     margin-top: 2vw;
@@ -142,7 +153,7 @@ a:hover {
     /*line-height: 60%;*/
 }
 
-.heading > h3, h4, h5 {
+.task-heading > h3, h4, h5 {
   padding: 0px;
   margin: 0px;
 }
