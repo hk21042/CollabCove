@@ -45,7 +45,7 @@
               <span class="tooltiptext">Logout</span>
             </div>
           </div>
-          <div class="heading">
+          <div class="task-heading">
             <h3>
               Project Name
             </h3>
