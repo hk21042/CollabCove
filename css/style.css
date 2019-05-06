@@ -135,11 +135,18 @@ a:hover {
 .heading {
     top: 0;
     margin-left: 9vw; /* Same as the width of the sidenav */
-    margin-top: 1vw;
+    margin-top: 2vw;
     font-size: 30px; /* Increased text to enable scrolling */
     width: calc(100% - 9vw);
-    height: 3vh;
+    height: 5vh;
     margin-bottom: 1vh;
+}
+
+.heading > h1 {
+  color: #999999;
+  font-size: 3vw;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .task-heading {
@@ -477,3 +484,24 @@ button:focus {
     outline:0;
 }
 
+#delete-button {
+    float: right;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 50px;
+    background-color: #EDEFF2;
+    border: 1px solid #DFE1E5;
+}
+
+#complete-button {
+    float: center;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 50px;
+    background-color: #EDEFF2;
+    border: 1px solid #DFE1E5;
+}

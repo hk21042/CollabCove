@@ -11,7 +11,7 @@ function createTask() {
         <tr>
           <td id="taskBox" onclick="displayDetails(this)">
             <h2>
-              <span>${taskName}</span> <span style="float:right; padding-right: 10px">${dueDate}</span>
+              <span>${taskName}</span> <span style="float:right; padding-right: 10px">${dueDate.toLocaleDateString("en-US")}</span>
             </h2>
             <p>
               ${taskDes}
@@ -66,6 +66,8 @@ function displayDetails(task)  {
         <h2>Task: ${taskName}</h2>
         <h3>Due: ${dueDate}</h3>
         <p>${taskDescription}</p>
+        <span id="delete-button" onclick="closeWindow2()">Delete</span>
+        <span id="complete-button" onclick="closeWindow2()">Completed</span>
     `
     console.log(taskCont);
     document.getElementById("detailContent").innerHTML = taskCont;

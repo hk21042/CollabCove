@@ -55,7 +55,6 @@
         </h1>
       </div>
       <br>
-      <div width="100%" class="orLine"></div>
       <br>
       <br>
       <br>
