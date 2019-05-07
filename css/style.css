@@ -428,7 +428,7 @@ footer  {
     flex-wrap: wrap;
 }
 
-.projectBox a: hover{
+.projectBox a:hover{
     color: transparent;
     background-color: transparent;
     text-decoration: none;

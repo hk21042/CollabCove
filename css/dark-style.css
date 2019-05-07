@@ -147,6 +147,22 @@ a:hover {
   padding: 5px;
   margin-top: 5px;
 }
+
+.task-heading {
+    top: 0;
+    margin-left: 9vw; /* Same as the width of the sidenav */
+    margin-top: 2vw;
+    font-size: 30px; /* Increased text to enable scrolling */
+    width: calc(100% - 9vw);
+    height: 3vh;
+    margin-bottom: 1vh;
+    /*line-height: 60%;*/
+}
+
+.task-heading > h3, h4, h5 {
+  padding: 0px;
+  margin: 0px;
+}
 .heading1 {
     top: 0;
     margin-left: 18vw; /* Same as the width of the sidenav */
@@ -407,7 +423,7 @@ footer  {
     flex-wrap: wrap;
 }
 
-.projectBox a: hover{
+.projectBox a:hover{
     color: transparent;
     background-color: transparent;
     text-decoration: none;
