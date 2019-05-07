@@ -86,11 +86,6 @@ function switchThemeNormal(){
     localStorage.setItem("theme", "css/style.css");
 }
 
-function deleteTask(task){
-    task.style.display = "none";
-    closeWindow2();
-}
-
 function completeTask(task){
     task.style.color="#cdd7f0";
     task.style.backgroundColor= "#F9FAFD";
