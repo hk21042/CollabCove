@@ -79,6 +79,6 @@ function displayDetails(task)  {
 }
 
 function projectRedirect(project)  {
-    var name = project.children[0].textContent;
+    var name = projects.children[0].textContent;
     window.open('/collabcove/tasks.php?name=' + name, '_self');
 }
