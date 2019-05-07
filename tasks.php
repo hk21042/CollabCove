@@ -12,7 +12,7 @@
       <div class = "content">
           <div class="sidenav">
             <div class="tooltip">
-              <a href="home.html">
+              <a href="home.php">
                 <center>
                   <img src="media/home.png" width="47">
                 </center>
@@ -20,7 +20,7 @@
               <span class="tooltiptext">Home</span>
             </div>
             <div class="tooltip">
-              <a href="profile.html">
+              <a href="profile.php">
                 <center>
                   <img src="media/profile.png" width="45" height="45">
                 </center>
@@ -28,7 +28,7 @@
               <span class="tooltiptext">Profile</span>
             </div>
             <div class="tooltip">
-              <a href="settings.html">
+              <a href="settings.php">
                 <center>
                   <img src="media/settings.png" width="50">
                 </center>
@@ -37,7 +37,7 @@
             </div>
             <center style="margin-top: 50vh;"></center>
             <div class="tooltip">
-              <a href="index.html?logout='1'">
+              <a href="index.php?logout='1'">
                 <center>
                   <img src = "media/logout.png" width="40" style="bottom: 0">
                 </center>
