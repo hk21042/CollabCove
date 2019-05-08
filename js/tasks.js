@@ -100,4 +100,5 @@ function completeTask(task){
     closeWindow2();
     task.style.color="#cdd7f0";
     task.style.backgroundColor= "#F9FAFD";
+    task.disabled = true;
 }
