@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="task-heading">
-            <h3>
+            <!--<h3>
               Project Name
             </h3>
             <h4 style="color: #48516e">
@@ -55,7 +55,7 @@
             <h5 style="color: #48516e; font-style: italic;">
                 Lorem ipsum dlsfjkjdfsdjnfkjdsnfjds nfjsdnfkjsndafkjdsnfkjdnsfk fweagwaggweagwa kdsjnfjkdsnf 
                 jkdsnfkjdsnfjkndsf dshfkjsdna kjdsfjkdnsfkjdsnf gaewgwagwagwagewagewakdjsbfjkdsnfjkndsfjk jhdbshjsvhj jdsnvjkdnsdskjnvdskljfnv kjbdsvhbdfv
-            </h5>
+            </h5>-->
             
           </div>
     </div>
