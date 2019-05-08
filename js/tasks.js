@@ -43,6 +43,9 @@ function createProject() {
                 <h2>
                   ${name}
                 </h2>
+                <h3>
+                    ${date}
+                </h3>
                 <p>
                   ${des}
                 </p>
@@ -80,5 +83,21 @@ function displayDetails(task)  {
 
 function projectRedirect(project)  {
     var name = project.children[0].textContent;
-    window.open('/collabcove/tasks.php?name=' + name.trim(), '_self');
+    window.open('/collabcove/tasks.php?name=' + name, '_self');
+    var dueDate = project.children[1].textContent;
+    var projectDescription = project.children[2].textContent;
+    var projectCont = `
+        <h2>${projectName}</h2>
+        <h3>Due Date: ${dueDate}</h3>
+        <p>${projectDescription}</p>
+    `
+    console.log(projectCont);
+    document.getElementById("task-heading").innerHTML = projectCont;
+
+}
+
+function completeTask(task){
+    closeWindow2();
+    task.style.color="#cdd7f0";
+    task.style.backgroundColor= "#F9FAFD";
 }
