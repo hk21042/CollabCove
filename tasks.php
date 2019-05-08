@@ -5,7 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <link type = "text/css" rel="stylesheet" href="css/style.css" id="theme">
     <link type = "text/css" rel="stylesheet" href="css/tasks.css">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   </head>
   <body onload="loadTasks(), setTheme()"><!--find free use image--> 
     <!--<?php if  (isset($_SESSION['success'])): ?>-->
@@ -46,6 +46,12 @@
             </div>
           </div>
           <div class="task-heading">
+              <h3 class="task-heading-h3">
+              </h3>
+              <h4 class="task-heading-h4">
+              </h4>
+              <h5 class="task-heading-h5">
+              </h5>
             <!--<h3>
               Project Name
             </h3>

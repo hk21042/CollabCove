@@ -160,7 +160,7 @@ a:hover {
     /*line-height: 60%;*/
 }
 
-.task-heading > h3, h4, h5 {
+.task-heading-h3, .task-heading-h4, .task-heading-h5 {
   padding: 0px;
   margin: 0px;
 }
@@ -472,7 +472,6 @@ footer  {
 }
 
 #taskTable{
-    margin-top: 200px;
     border-collapse:separate; 
     border-spacing:20px 20px; 
     width: 100%;

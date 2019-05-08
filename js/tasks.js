@@ -84,16 +84,24 @@ function displayDetails(task)  {
 function projectRedirect(project)  {
     var name = project.children[0].textContent;
     window.open('/collabcove/tasks.php?name=' + name, '_self');
+    writeProject(project);
+}
+
+function writeProject(project){
+    var name = project.children[0].textContent;
     var dueDate = project.children[1].textContent;
     var projectDescription = project.children[2].textContent;
-    var projectCont = `
-        <h2>${name}</h2>
-        <h3>Due Date: ${dueDate}</h3>
-        <p>${projectDescription}</p>
+    /*var projectCont = `
+        <h3>${name}</h3>
+        <h4>Due Date: ${dueDate}</h4>
+        <h5>${projectDescription}</h5>
     `
-    console.log(projectCont);
-    document.getElementById("task-heading").innerHTML = projectCont;
-
+    console.log(projectCont);*/
+    console.log(name);
+    document.getElementById("task-heading-h3").innerHTML = name;
+    document.getElementById("task-heading-h4").innerHTML = "Due Date: " + dueDate;
+    document.getElementById("task-heading-h5").innerHTML = projectDescription;
+    
 }
 
 function completeTask(task){
