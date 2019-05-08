@@ -87,7 +87,7 @@ function projectRedirect(project)  {
     var dueDate = project.children[1].textContent;
     var projectDescription = project.children[2].textContent;
     var projectCont = `
-        <h2>${projectName}</h2>
+        <h2>${name}</h2>
         <h3>Due Date: ${dueDate}</h3>
         <p>${projectDescription}</p>
     `
