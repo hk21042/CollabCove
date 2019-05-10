@@ -120,6 +120,9 @@
           </tr>
           <tr>
             <input type="color" id="sidebarColor">
+            <script>
+            //detect new color and set to localstorage
+            </script>
           </tr>
         </table>
       </div>

@@ -14,6 +14,17 @@ function setButton()    {
     }
 }
 
+function setSidebar() {
+  if (localStorage.getItem("sidebarColor") == null) {
+    if (localStorage.getItem("theme") == "css/style.css") {
+      localStorage.setItem("sidebarColor", "#024FCF");
+    } else {
+      localStorage.setItem("sidebarColor", "#0C1F3B");
+    }
+  }
+  document.getElementById('sidenav').backgroundColor = localStorage.getItem("sidebarColor");
+}
+
 function dropdown() {
     if (dropped == false) {
         document.getElementById("Menu").className = "";
