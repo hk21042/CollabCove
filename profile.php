@@ -118,6 +118,9 @@
               <?php include('errors.php') ?>
             </td>
           </tr>
+          <tr>
+            <input type="color" id="sidebarColor">
+          </tr>
         </table>
       </div>
     </div>
