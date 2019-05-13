@@ -119,10 +119,7 @@
             </td>
           </tr>
           <tr>
-            <input type="color" id="sidebarColor" oninput="setSidebarColor()">
-            <script>
-            //detect new color and set to localstorage
-            </script>
+            <input type="color" id="sidebarColor" oninput="setSidebarColor()"><!-- set button color-->
           </tr>
         </table>
       </div>
