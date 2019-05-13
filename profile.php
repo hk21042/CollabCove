@@ -21,7 +21,7 @@
                   <img src="media/home.png" width="47">
                 </center>
               </a>
-              <span class="tooltiptext">Home</span>
+              <span class="tooltiptext" id="tooltip">Home</span>
             </div>
             <div class="tooltip">
               <a href="profile.php">
@@ -29,7 +29,7 @@
                   <img src="media/profile.png" width="45" height="45">
                 </center>
               </a>
-              <span class="tooltiptext">Profile</span>
+              <span class="tooltiptext" id="tooltip">Profile</span>
             </div>
             <div class="tooltip">
               <a href="settings.php">
@@ -37,7 +37,7 @@
                   <img src="media/settings.png" width="50">
                 </center>
               </a>
-              <span class="tooltiptext">Settings</span>
+              <span class="tooltiptext" id="tooltip">Settings</span>
             </div>
             <center style="margin-top: 50vh;"></center>
             <div class="tooltip">
@@ -46,7 +46,7 @@
                   <img src = "media/logout.png" width="40" style="bottom: 0">
                 </center>
               </a>
-              <span class="tooltiptext">Logout</span>
+              <span class="tooltiptext" id="tooltip">Logout</span>
             </div>
           </div>
       <div class="heading">
@@ -119,7 +119,7 @@
             </td>
           </tr>
           <tr>
-            <input type="color" id="sidebarColor">
+            <input type="color" id="sidebarColor" oninput="setSidebarColor()">
             <script>
             //detect new color and set to localstorage
             </script>

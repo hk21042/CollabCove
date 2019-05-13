@@ -16,13 +16,28 @@ function setButton()    {
 
 function setSidebar() {
   if (localStorage.getItem("sidebarColor") == null) {
-    if (localStorage.getItem("theme") == "css/style.css") {
-      localStorage.setItem("sidebarColor", "#024FCF");
-    } else {
+    if (localStorage.getItem("theme") == "css/dark-style.css") {
       localStorage.setItem("sidebarColor", "#0C1F3B");
+    } else {
+      localStorage.setItem("sidebarColor", "#024FCF");
     }
   }
   document.getElementById('sidenav').backgroundColor = localStorage.getItem("sidebarColor");
+
+  if (localStorage.getItem("tooltipColor") == null) {
+    if (localStorage.getItem("theme") == "css/dark-style.css") {
+      localStorage.setItem("tooltipColor", "rgb(63,131,245,0.6)");
+    } else {
+      localStorage.setItem("tooltipColor", "rgb(12,31,59,0.6)");
+    }
+  }
+  document.getElementById('tooltip').backgroundColor = localStorage.getItem("tooltipColor");
+}
+
+function setSidebarColor() {
+  var color = document.getElementById("sidebarColor").value+"";
+  localStorage.setItem("sidebarColor", color);
+  localStorage.setItem("tooltipColor", ('#'+99+color.substring(1)));
 }
 
 function dropdown() {
