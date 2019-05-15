@@ -33,6 +33,8 @@ function setSidebar() {
     }
   }
   document.getElementById('tooltip').backgroundColor = localStorage.getItem("tooltipColor");
+  
+  document.getElementById("sidebarColor").value = localStorage.getItem("sidebarColor");
 }
 
 function setSidebarColor() {
