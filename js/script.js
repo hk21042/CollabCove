@@ -5,6 +5,7 @@ function setTheme() {
     if  (localStorage.getItem("theme") == null)
         localStorage.setItem("theme", "css/style.css");
     document.getElementById('theme').href = localStorage.getItem("theme");
+    setSidebar();
 }
 
 function setButton()    {
@@ -38,6 +39,7 @@ function setSidebarColor() {
   var color = document.getElementById("sidebarColor").value+"";
   localStorage.setItem("sidebarColor", color);
   localStorage.setItem("tooltipColor", ('#'+99+color.substring(1)));
+  setSidebar();
 }
 
 function dropdown() {

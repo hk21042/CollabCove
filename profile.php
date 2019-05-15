@@ -119,7 +119,12 @@
             </td>
           </tr>
           <tr>
-            <input type="color" id="sidebarColor" oninput="setSidebarColor()"><!-- set button color-->
+            <input type="color" id="sidebarColor" onchange="setSidebarColor()" onload="setButtonColor()">
+            <script>
+              function setButtonColor() {
+                document.getElementById("sidebarColor").value = document.getElementById("sidebarColor").value;
+              }
+            </script>
           </tr>
         </table>
       </div>
